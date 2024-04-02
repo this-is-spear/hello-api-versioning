@@ -1,0 +1,21 @@
+### header version v1
+
+GET http://localhost:8080/hello/header
+
+### header version v1
+
+GET http://localhost:8080/hello/header
+X-API-VERSION: 1
+
+### header version v2
+
+GET http://localhost:8080/hello/header
+X-API-VERSION: 2
+
+### url version v1
+
+GET http://localhost:8080/v1/hello/url
+
+### url version v2
+
+GET http://localhost:8080/v2/hello/url
