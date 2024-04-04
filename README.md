@@ -84,6 +84,12 @@ class VersioningConfiguration {
 }
 ```
 
+## 당장의 문제점
+
+### `@WebMvcTest` 사용이 어려워진다.
+
+`getCustomMethodCondition` 메서드로 API를 조작한다면 `@WebMvcTest` 사용이 어려울 수 있다. 사용하기 위해서는 `@ContextConfiguration`를 통해 연관된 설정 파일을 추가해야 한다.
+
 ## 마지막으로
 
 버저닝 고민할 때 팀원이었던 [JoeCP17](https://github.com/JoeCP17/api-version-management/blob/main/src/main/kotlin/com/example/apiversionmanagement/mimetype/VersionResourceRequestCondition.kt)님의 조언으로 애너테이션 관리를 고민하게 됐고, 결과가 만들어졌다.
