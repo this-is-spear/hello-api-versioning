@@ -90,6 +90,10 @@ class VersioningConfiguration {
 
 `getCustomMethodCondition` 메서드로 API를 조작한다면 `@WebMvcTest` 사용이 어려울 수 있다. 사용하기 위해서는 `@ContextConfiguration`를 통해 연관된 설정 파일을 추가해야 한다.
 
+### Swagger 지원이 잘 되지 않는다.
+
+swagger는 요청을 검증하는 과정이 변경됨을 인지하지 못한다. swagger가 문서를 기록하기 이전에 요청 검증 동작이 수정되도록 설정해야 한다.
+
 ## 마지막으로
 
 버저닝 고민할 때 팀원이었던 [JoeCP17](https://github.com/JoeCP17/api-version-management/blob/main/src/main/kotlin/com/example/apiversionmanagement/mimetype/VersionResourceRequestCondition.kt)님의 조언으로 애너테이션 관리를 고민하게 됐고, 결과가 만들어졌다.
